@@ -188,6 +188,11 @@
           </div>
         </div>
       </div>
+
+      <button type="button" class="btn" id="stepBaseBtn">1단계: 호봉·경력·가족 수당 반영</button>
+      <p class="hint" style="margin-top:4px;">
+        ·호봉·경력·배우자·자녀 수 입력 후 1단계를 누르면 기본급(4/8시간)과 교직수당·급식비·교원연구비·가족수당이 자동 반영됩니다.
+      </p>
     </section>
 
     <!-- 4. 월별 지급 수당 -->
@@ -195,7 +200,7 @@
       <h2>4. 월별 지급 수당</h2>
       <p class="hint">
         ·매월 정기적으로 지급되는 수당<br/>
-        ·교직수당·정액급식비·교원연구비·가족수당은 입력값과 근무연수·가족사항에 따라 자동 채워짐(필요 시 수정 가능).
+        ·교직수당·정액급식비·교원연구비·가족수당은 1단계에서 입력값과 근무연수·가족사항에 따라 자동 채워짐(필요 시 수정 가능).
       </p>
 
       <div class="table-wrap" style="margin-top:10px;">
@@ -335,7 +340,7 @@
       <p class="hint">
         ·계약기간 동안 각 월별 인건비 지급 일수 계산함. 수동 입력 가능.
       </p>
-      <button type="button" class="btn" id="buildMonthBtn">월별 일수 계산하기</button>
+      <button type="button" class="btn" id="buildMonthBtn">2단계: 월별 일수 계산하기</button>
       <p id="monthError" class="error"></p>
 
       <div id="monthTableWrap" style="margin-top:10px;"></div>
@@ -347,7 +352,7 @@
       <p class="hint">
         ·월별 인건비 일할계산 포함해서 산출함. 
       </p>
-      <button type="button" class="btn" id="calcBtn">계산 결과 보기</button>
+      <button type="button" class="btn" id="calcBtn">3단계: 인건비 및 퇴직금 계산하기</button>
       <p id="calcError" class="error"></p>
 
       <div id="resultWrap" style="margin-top:10px;"></div>
@@ -382,6 +387,7 @@
   </footer>
 
   <script src="/static/global-loader.js?v=1"></script>
-  <script src="script.js"></script>
+  <script src="/static/teacher-step-core.js?v=251120"></script>
+  <script src="script.js?v=25112002"></script>
 </body>
 </html>
